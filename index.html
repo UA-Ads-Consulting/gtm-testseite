@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTM Testseite</title>
+</head>
+<body>
+  <h1>Meine GTM-Testseite</h1>
+  <p>Hier übe ich Google Tag Manager.</p>
+
+  <button id="kontakt-btn">Kontakt klicken</button>
+
+  <a href="https://example.com" id="angebot-link">Zum Angebot</a>
+
+  <form id="test-form">
+    <input type="text" name="name" placeholder="Name eingeben">
+    <button type="submit">Absenden</button>
+  </form>
+
+  <script>
+    document.getElementById('kontakt-btn').addEventListener('click', function () {
+      alert('Button wurde geklickt');
+    });
+
+    document.getElementById('test-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Formular wurde abgesendet');
+    });
+  </script>
+</body>
+</html>
